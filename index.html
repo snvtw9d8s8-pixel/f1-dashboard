@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#05060a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="F1 Crushboard" />
+  <title>F1 Crushboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">F1 Crushboard</p>
+        <h1 id="gpName">GP Austria</h1>
+        <p id="sessionText" class="muted">Prossima sessione</p>
+      </div>
+      <div class="live-pill" id="livePill">LIVE READY</div>
+    </section>
+
+    <section class="countdown panel">
+      <div class="timebox"><strong id="d">--</strong><span>Giorni</span></div>
+      <div class="timebox"><strong id="h">--</strong><span>Ore</span></div>
+      <div class="timebox"><strong id="m">--</strong><span>Min</span></div>
+      <div class="timebox"><strong id="s">--</strong><span>Sec</span></div>
+    </section>
+
+    <section class="panel track">
+      <div>
+        <h2>Info circuito</h2>
+        <h3 id="circuitName">Red Bull Ring</h3>
+        <p id="trackInfo">4.318 km · 71 giri · 10 curve</p>
+        <p id="recordInfo" class="purple">Record gara 1:05.619</p>
+      </div>
+      <div class="track-map" id="trackMap">AUSTRIA</div>
+    </section>
+
+    <section class="grid two">
+      <article class="panel">
+        <h2>Ultimo vincitore</h2>
+        <div class="driver-card">
+          <div class="avatar">LH</div>
+          <div>
+            <h3>Lewis Hamilton</h3>
+            <p>Ferrari</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel weather">
+        <h2>Meteo</h2>
+        <div class="weather-big">☀️</div>
+        <p id="weather">24°C · sereno · vento 9 km/h</p>
+      </article>
+    </section>
+
+    <section class="panel">
+      <h2>Classifica piloti</h2>
+      <ol id="drivers" class="standing"></ol>
+    </section>
+
+    <section class="panel">
+      <h2>Tempi live</h2>
+      <div id="timing" class="timing"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Costruttori</h2>
+      <ol id="teams" class="standing"></ol>
+    </section>
+
+    <section class="panel">
+      <h2>Prossime gare</h2>
+      <div id="races" class="races"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
